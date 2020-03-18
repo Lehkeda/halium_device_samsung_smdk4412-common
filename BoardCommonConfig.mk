@@ -66,8 +66,8 @@ TARGET_PROVIDES_INIT_TARGET_RC := true
 BOARD_KERNEL_CMDLINE := console=ttySAC2,115200
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_PAGESIZE := 2048
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-6.x/bin
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
+#KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-6.x/bin
+#TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 
 # Filesystem
 BOARD_NAND_PAGE_SIZE := 4096
@@ -176,7 +176,7 @@ BACKLIGHT_PATH := /sys/class/backlight/panel/brightness
 BOARD_CHARGER_SHOW_PERCENTAGE := true
 
 # Override healthd HAL
-BOARD_HAL_STATIC_LIBRARIES := libhealthd.exynos4
+#BOARD_HAL_STATIC_LIBRARIES := libhealthd.exynos4
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO

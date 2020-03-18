@@ -15,7 +15,8 @@
  * limitations under the License.
  */
 
-#include <healthd.h>
+
+//#include <healthd.h>
 
 void
 healthd_board_init(struct healthd_config *config)
@@ -30,7 +31,7 @@ healthd_board_init(struct healthd_config *config)
     config->batteryTechnologyPath  = "/sys/class/power_supply/battery/technology";
     // others use defaults
 }
-
+/*
 int
 healthd_board_battery_update(struct android::BatteryProperties *props)
 {
@@ -47,7 +48,7 @@ void healthd_board_mode_charger_battery_update(struct android::BatteryProperties
 {
 
 }
-
+*/
 void healthd_board_mode_charger_set_backlight(bool)
 {
 
